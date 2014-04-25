@@ -67,8 +67,8 @@ int main(int argc, const char * argv[])
       NSUUID * uuid = [[NSUUID alloc] initWithUUIDString:[options stringForKey:@"uuid"]];
     
       Beacon * beacon = [[Beacon alloc] initWithUUID:uuid
-                                                              major:[options integerForKey:@"major"]
-                                                           andMinor:[options integerForKey:@"minor"]];
+                                               major:[options integerForKey:@"major"]
+                                            andMinor:[options integerForKey:@"minor"]];
     
       NSLog(@"Setting up iBeacon with UUID: %@", [beacon.uuid UUIDString]);
     
